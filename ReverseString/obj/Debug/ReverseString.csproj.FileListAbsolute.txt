@@ -1,0 +1,8 @@
+C:\Users\HUAWEI\source\repos\ReverseString\ReverseString\obj\Debug\ReverseString.csproj.AssemblyReference.cache
+C:\Users\HUAWEI\source\repos\ReverseString\ReverseString\obj\Debug\ReverseString.csproj.SuggestedBindingRedirects.cache
+C:\Users\HUAWEI\source\repos\ReverseString\ReverseString\obj\Debug\ReverseString.csproj.CoreCompileInputs.cache
+C:\Users\HUAWEI\source\repos\ReverseString\ReverseString\bin\Debug\ReverseString.exe.config
+C:\Users\HUAWEI\source\repos\ReverseString\ReverseString\bin\Debug\ReverseString.exe
+C:\Users\HUAWEI\source\repos\ReverseString\ReverseString\bin\Debug\ReverseString.pdb
+C:\Users\HUAWEI\source\repos\ReverseString\ReverseString\obj\Debug\ReverseString.exe
+C:\Users\HUAWEI\source\repos\ReverseString\ReverseString\obj\Debug\ReverseString.pdb
