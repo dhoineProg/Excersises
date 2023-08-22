@@ -9,26 +9,7 @@ namespace Part1
 {
     internal class Program
     {
-        static bool ExaminationString(string inputS)
-        {
-            try
-            {
-                foreach(char letter in inputS)
-                {
-                    if (!Char.IsLower(letter) || !Char.IsLetter(letter) || !Regex.IsMatch(inputS, @"\P{IsCyrillic}"))
-                    {
-                        return false;
-                    } 
-                }
-                return true;
-            }
-            catch(Exception e)
-            {
-                Console.WriteLine(e.ToString());
-            }
-            return true;
-        }
-
+    
         static string ProcessString(string inputS)
         {
                 if (inputS.Length % 2 == 0)
@@ -57,16 +38,9 @@ namespace Part1
         {
             Console.WriteLine("Введите строку: ");
             string inputS = Console.ReadLine();
-            if (ExaminationString(inputS))
-            {
-                string procesString = ProcessString(inputS);
+            string procesString = ProcessString(inputS);
 
-                Console.WriteLine(procesString);
-            }
-            else
-            {
-                Console.WriteLine("Проверьте правильность написания строки.");
-            }
+            Console.WriteLine(procesString);
 
             Console.ReadLine();
         }
