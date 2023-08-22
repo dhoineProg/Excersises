@@ -9,7 +9,24 @@ namespace Part1
 {
     internal class Program
     {
+          static Dictionary<char, int> CountingLetters(string inputS)
+        {
+            Dictionary<char, int> characterOccurrences = new Dictionary<char, int>();
 
+            foreach (char c in inputS)
+            {
+                if (characterOccurrences.ContainsKey(c))
+                {
+                    characterOccurrences[c]++;
+                }
+                else
+                {
+                    characterOccurrences[c] = 1;
+                }
+            }
+
+            return characterOccurrences;
+        }
         static bool ExaminationString(string inputS)
         {
             try
@@ -64,6 +81,13 @@ namespace Part1
                 string procesString = ProcessString(inputS);
 
                 Console.WriteLine(procesString);
+                Dictionary<char, int> characterOccurrences = CountingLetters(procesString);
+
+                Console.WriteLine("Информация о повторениях символов в обработанной строке:");
+                foreach (var kvp in characterOccurrences)
+                {
+                    Console.WriteLine($"Символ '{kvp.Key}': {kvp.Value} раз(а)");
+                }
             }
             else
             {
